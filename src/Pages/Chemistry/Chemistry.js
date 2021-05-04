@@ -14,7 +14,7 @@ const Chemistry = () => {
             <>
                 <h2>Options</h2>
                 <Card>
-                    <Paragraph disabled={!exportable}>
+                    <Paragraph disabled={!exportable} data-testid={'paragraph'}>
                         <Switch onChange={toggleExport} checked={exportable}></Switch>
                         <h3>Disable V2000 export</h3>
                         <p>
